@@ -1,0 +1,24 @@
+.box {
+  border: 1px solid black;
+  padding: 1rem 0;
+  border-radius: 0.3rem;
+  background-color: #c1beff;
+  width: 15rem;
+  min-height: 18rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+/* different hover for inner element when is in the Box */
+.box div:nth-child(n):hover {
+  background-color: #282566;
+}
+
+/* when inner element is in the box title must disappear */
+.box div:nth-child(n) h4 {
+  display: none;
+}
